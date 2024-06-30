@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        body {
+            position: relative;
+        }
+        section {
+            padding-top: 80px; /* Adjust if necessary to prevent content from being hidden behind the navbar */
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+        .nav-link {
+            cursor: pointer;
+        }
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .about-section img {
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            width: 150px;
+            height: 150px;
+        }
+        .about-section .content {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .projects-section {
+            padding: 50px 0;
+        }
+        .projects-section .card {
+            margin: 0 auto;
+            max-width: 350px;
+        }
+        @media (min-width: 768px) {
+            .projects-section .card {
+                margin-bottom: 30px;
+            }
+        }
+        .skills-section {
+            padding: 50px 0;
+        }
+        .skills-section .card {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        @media (min-width: 768px) {
+            .skills-section .card {
+                margin-bottom: 30px;
+            }
+        }
+        .contact-section {
+            background-color: #333;
+            padding: 50px 0;
+        }
+        .btn-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+        .btn-pink {
+            background-color: #e83e8c;
+            color: #fff;
+            border: none;
+        }
+        .btn-pink img {
+            width: 24px;
+            height: 24px;
+        }
+        .btn-pink:hover {
+            background-color: #dc3545;
+        }
+        .text-white {
+            color: #fff;
+        }
+        [data-toggle="tooltip"] {
+            position: relative;
+        }
+        [data-toggle="tooltip"]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home" class="about-section">
+        <!-- Home content here (optional) -->
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About</h2>
+            <img src="images/about.jpg" alt="Profile Image" class="img-fluid mx-auto d-block">
+            <div class="content">
+                <p>I'm a passionate data scientist with a solid foundation in mechanical engineering. I hold a degree in Mechanical Engineering and am currently expanding my expertise by diving into the world of data science.</p>
+                <p>I am driven by the power of data to transform raw information into meaningful insights. I enjoy solving complex problems and am passionate about leveraging data to make informed decisions. My engineering background provides me with a unique perspective on problem-solving, allowing me to approach data science challenges with analytical rigor and creativity.You can take a look at some of my projects in the section below. I will link my work to their GitHub repositories, so feel free to download my code and experiment with it.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/1.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="#" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="#" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="#" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <!-- Skill 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/1.png" class="card-img-top" alt="Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Storytelling</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section text-white">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p>your.email@example.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <p>(123) 456-7890</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" title="LinkedIn">
+                    <img src="icons/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" title="Twitter">
+                    <img src="icons/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" title="GitHub">
+                    <img src="icons/github.png" alt="GitHub">
+                </a>
+                <a href="https://medium.com/@yourprofile" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" title="Medium">
+                    <img src="icons/medium.png" alt="Medium">
+                </a>
+                <a href="https://youtube.com/c/yourprofile" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" title="YouTube">
+                    <img src="icons/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
